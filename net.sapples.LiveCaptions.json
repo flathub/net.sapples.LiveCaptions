@@ -7,7 +7,6 @@
     "finish-args" : [
         "--share=ipc",
         "--device=dri",
-        "--share=ipc",
         "--socket=wayland",
         "--socket=pulseaudio",
         "--socket=fallback-x11"
@@ -83,8 +82,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/abb128/LiveCaptions",
-                    "tag" : "v0.1.2",
-                    "commit" : "8c7fc11487f0e85732985422d79ea46c4d3ae6ed" 
+                    "tag" : "v0.2.0",
+                    "commit" : "37e37fe028cde59655b1920287a0d6081063b905" 
                 }
             ]
         }
