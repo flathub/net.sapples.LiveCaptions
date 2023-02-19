@@ -82,8 +82,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/abb128/LiveCaptions",
-                    "tag" : "v0.2.0",
-                    "commit" : "37e37fe028cde59655b1920287a0d6081063b905" 
+                    "tag" : "v0.3.0",
+                    "commit" : "5e51df8ab851d745210a34bea052865fa4a60ed0" 
                 }
             ]
         }
