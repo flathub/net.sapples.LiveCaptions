@@ -36,22 +36,22 @@
                 {
                     "type" : "archive",
                     "only-arches" : ["x86_64"],
-                    "dest" : "onnxruntime-1.13.1",
-                    "url" : "https://github.com/microsoft/onnxruntime/releases/download/v1.13.1/onnxruntime-linux-x64-1.13.1.tgz",
-                    "sha256" : "2c7fdcfa8131b52167b1870747758cb24265952eba975318a67cc840c04ca73e"
+                    "dest" : "onnxruntime-1",
+                    "url" : "https://github.com/microsoft/onnxruntime/releases/download/v1.14.1/onnxruntime-linux-x64-1.14.1.tgz",
+                    "sha256" : "010585f534d822bf02d54c7cfc53b57aa3eb0cf34f8fb7503ee519ed18e25d29"
                 },
 
                 {
                     "type" : "archive",
                     "only-arches" : ["aarch64"],
-                    "dest" : "onnxruntime-1.13.1",
-                    "url" : "https://github.com/microsoft/onnxruntime/releases/download/v1.13.1/onnxruntime-linux-aarch64-1.13.1.tgz",
-                    "sha256" : "18e441585de69ef8aab263e2e96f0325729537ebfbd17cdcee78b2eabf0594d2"
+                    "dest" : "onnxruntime-1",
+                    "url" : "https://github.com/microsoft/onnxruntime/releases/download/v1.14.1/onnxruntime-linux-aarch64-1.14.1.tgz",
+                    "sha256" : "20965e05d2da6a0e6acedda8aca1a8f75c3f4cb1d7932403a9977b753b1b2120"
                 }
             ],
             "build-commands" : [
                 "mkdir -p $ONNX_ROOT",
-                "mv onnxruntime-1.13.1/* $ONNX_ROOT",
+                "mv onnxruntime-1/* $ONNX_ROOT",
 
                 "mkdir -p $FLATPAK_DEST/lib",
                 "cp $ONNX_ROOT/lib/* $FLATPAK_DEST/lib"
@@ -65,8 +65,8 @@
                 {
                     "type" : "file",
                     "dest-filename" : "aprilv0_en-us.april",
-                    "url" : "https://april.sapples.net/aprilv0_en-us.april",
-                    "sha256" : "f5a30f888e797769b1b7de143c05d2c92a1702c263b5b71d62fd2028cede5627"
+                    "url" : "https://april.sapples.net/april-english-dev-01110_en.april",
+                    "sha256" : "77eb95d0fa4f7708a37e868c2265301ee6c42dcb25e63ca63eea3d9cbadbc1f3"
                 }
             ],
             "build-commands" : [
@@ -82,8 +82,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/abb128/LiveCaptions",
-                    "tag" : "v0.3.1",
-                    "commit" : "9b1a615f12a1774fa819c07d61d4ed442fc6043e" 
+                    "commit" : "dbd681dcfe53fd51633eece8e4e8309425349a81"
                 }
             ]
         }
