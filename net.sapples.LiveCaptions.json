@@ -1,7 +1,7 @@
 {
     "app-id" : "net.sapples.LiveCaptions",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "livecaptions",
     "finish-args" : [
@@ -82,8 +82,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/abb128/LiveCaptions",
-                    "tag": "v0.4.1",
-                    "commit" : "df0540a20c7122b8d4e663c8a60008e82533846f"
+                    "tag": "v0.4.2",
+                    "commit" : "c3988a84ee90435246bc090c5990bd6b06ad9c27"
                 }
             ]
         }
