@@ -1,7 +1,7 @@
 {
     "app-id" : "net.sapples.LiveCaptions",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
+    "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "command" : "livecaptions",
     "finish-args" : [
@@ -10,18 +10,6 @@
         "--socket=wayland",
         "--socket=pulseaudio",
         "--socket=fallback-x11"
-    ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "/onnx_root",
-        "*.la",
-        "*.a"
     ],
     "build-options" : {
         "env" : {
