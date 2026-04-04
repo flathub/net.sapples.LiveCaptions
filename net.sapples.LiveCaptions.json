@@ -72,6 +72,10 @@
                     "url" : "https://github.com/abb128/LiveCaptions",
                     "tag": "v0.4.2",
                     "commit" : "c3988a84ee90435246bc090c5990bd6b06ad9c27"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix-appdata.patch"
                 }
             ]
         }
