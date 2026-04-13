@@ -1,0 +1,68 @@
+From 816b6c6ec35769500ea7296db0309a1533223530 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sat, 4 Apr 2026 23:31:49 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/net.sapples.LiveCaptions.appdata.xml.in | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+
+diff --git a/data/net.sapples.LiveCaptions.appdata.xml.in b/data/net.sapples.LiveCaptions.appdata.xml.in
+index ff03ab3..59d4417 100644
+--- a/data/net.sapples.LiveCaptions.appdata.xml.in
++++ b/data/net.sapples.LiveCaptions.appdata.xml.in
+@@ -4,7 +4,9 @@
+ 
+   <name>Live Captions</name>
+   <summary>Live Captioning for the desktop</summary>
+-  <developer_name translatable="no">abb128</developer_name>
++  <developer id="net.sapples">
++    <name translate="no">abb128</name>
++  </developer>
+ 
+   <description>
+     <p>Live Captions is an application that provides realtime automatic subtitles for the Linux desktop.</p>
+@@ -18,22 +20,25 @@
+       <li>Less confident text is faded (darkened), this feature can be disabled</li>
+     </ul>
+ 
+-    <p>Running this requires a somewhat-decent CPU that can perform realtime captioning, especially if you want to be doing other tasks (such as video decode) while running Live Captions. It has been tested working on:</p>
++    <p>Running this requires a somewhat-decent CPU that can perform realtime captioning, especially
++      if you want to be doing other tasks (such as video decode) while running Live Captions. It has been tested working on:</p>
+     <ul>
+       <li>Intel i7-2670QM (2011)</li>
+       <li>Intel i5-8265U (2018)</li>
+       <li>AMD Ryzen 5 1600 (2017)</li>
+       <li>Steam Deck</li>
+     </ul>
+ 
+     <p>GPU is not required or used.</p>
+ 
+-    <p>The live captions may not be accurate. It may make mistakes, including when it comes to numbers. Please do not rely on the results for anything critical or important.</p>
++    <p>The live captions may not be accurate. It may make mistakes, including when it comes to numbers.
++      Please do not rely on the results for anything critical or important.</p>
+     <p>More models may be trained and released in the future with better and more robust accuracy.</p>
+   </description>
+ 
+   <url type="homepage">https://github.com/abb128/LiveCaptions</url>
+   <url type="bugtracker">https://github.com/abb128/LiveCaptions/issues</url>
++  <url type="vcs-browser">https://github.com/abb128/LiveCaptions</url>
+ 
+   <screenshots>
+     <screenshot type="default">
+@@ -45,6 +50,12 @@
+   </screenshots>
+ 
+   <releases>
++    <release date="2024-06-08" version="0.4.2">
++      <url>https://github.com/abb128/LiveCaptions/releases/tag/v0.4.2</url>
++      <description>
++        <p>This is a maintenance release to fix a few build issues that have popped up.</p>
++      </description>
++    </release>
+     <release date="2023-09-22" version="0.4.1">
+       <url>https://github.com/abb128/LiveCaptions/releases/tag/v0.4.1</url>
+       <description>
+--
+libgit2 1.7.2
+
